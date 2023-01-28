@@ -6,18 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallpaper</title>
     <style>
-        body{
-            background-image: url('imagens/wallpaper003.jpg') ;
-            height: 100vh;
-            /*como o body esta vazio, temos que definir
-            o tamanho da view port, 100% dela.*/
-            background-size: 100%; 
-           background-repeat: no-repeat;
-           background-position: right bottom;/*serve para imagens grandes tambem*/
-        }
+       body{
+        height: 100vh;
+        /*background-color: black;
+        background-image: url('imagens/wallpaper002.jpg');
+        background-position: center center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        */
+        background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+        background-size: cover;
+    }
+       main{
+        background-color: aliceblue;
+        max-width: 700px;
+        padding: 10px;
+        text-align: justify;
+        margin: auto;
+        border: 1px solid blue;
+        border-radius: 15px;
+       }
     </style>
 </head>
 <body>
-    
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque tenetur quae quisquam ullam animi aliquid laudantium consectetur! Repellat saepe vitae tenetur quas ab? Reiciendis suscipit repudiandae deserunt velit aut!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum saepe perspiciatis similique nam? Delectus reiciendis fugit pariatur reprehenderit incidunt inventore nam odit, repellat, quaerat cumque quis magnam cupiditate similique eos!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam ad ea totam nesciunt non, veniam corporis necessitatibus nam vitae architecto exercitationem qui harum nostrum quod officiis autem quo nulla!</p>
+        <p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam ad ea totam nesciunt non, veniam corporis necessitatibus nam vitae architecto exercitationem qui harum nostrum quod officiis autem quo nulla!</p></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam ad ea totam nesciunt non, veniam corporis necessitatibus nam vitae architecto exercitationem qui harum nostrum quod officiis autem quo nulla!</p>
+    </main>
 </body>
 </html>
