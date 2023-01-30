@@ -40,6 +40,7 @@
         text-decoration: underline;
     }
     article{
+        padding-right: 20px;
         padding-top: 10vh;
         padding-bottom: 10vh;
         padding-left: 30px;
@@ -50,27 +51,30 @@
         font-family: var(--fontestrofe);
     }
     p{
+        margin-left: 30px;
         line-height: 2em;
+        background-color: #ffffff;
+    }
+    .backgroundimagem>p{
+        text-align: justify;
+        background-color: rgba(0, 0, 0, 0.401);
+        color: #ffffff; 
+        display: inline-block;/*caixa fica do tam exato do texto*/
+        font-size: 25px;
+        text-shadow: 1px 1px 0px black;
     }
     .backgroundimagem{
-        text-align: justify;
-        height: 450px;
-      
+        height: 100%;
+        width: 100%;
+        box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.34) ;
     }
     #flor{
         background: white url('imagens/background001.jpg') right bottom no-repeat fixed;
         background-size: cover;
     }
     #livro{
-        background:white url('imagens/background002.jpg') center center no-repeat fixed;
+        background:white url('imagens/background002.jpg') right bottom no-repeat fixed;
         background-size: cover;
-    }
-    .sombra{
-        background-color: rgba(0, 0, 0, 0.301);
-        color: #ffffff; 
-        display: inline-block;/*caixa fica do tam exato do texto*/
-        font-size: 25px;
-        margin-top: 45px;
     }
     footer{
         background-color: black;
@@ -87,7 +91,7 @@
         <h2>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" rel="external">Milton Duarte</a></h2>
     </header>
 <main>
-   <article class="comum"> 
+   <article> 
            <p>
                Estou ficando cansado <br>
                Da tal tecnologia <br>
@@ -100,7 +104,7 @@
        
    </article>
     <article class="backgroundimagem" id="flor">
-            <p class="sombra">
+            <p>
                 Não é mais como era antes<br>
                 É tudo abreviado<br>
                 "Você" só tem duas letras<br>
@@ -111,7 +115,7 @@
             </p>
         
     </article>
-    <article class="comum">
+    <article>
         <p>
             Arroba agora não pesa<br>
             É parte de um endereço<br>
@@ -136,7 +140,7 @@
     </article>
     
     <article class="backgroundimagem" id="livro">
-        <p class="sombra">
+        <p>
             Tenho saudade das cartas <br>
             Escritas com a própria mão <br>
             Mandava no mês de Junho <br>
@@ -148,7 +152,7 @@
         
     </article>
     
-    <article class="comum">
+    <article>
         <p>
             Agora, escrevo e envio  <br>
             Chegando na mesma hora <br>
