@@ -14,11 +14,23 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         
-        td{
+        td, th{
             border: 1px solid black;
             padding: 5px;
         }
-        
+        #academica>thead, tbody>tr>th.gray{
+            background-color: gray;
+            color: #ffffff;
+        }
+        #academica{
+            width: 600px;
+        }
+        .nomes{
+            width: 700px;
+        }
+        col.nome{
+            background-color: rgb(104, 233, 53);
+        }
     </style>
 </head>
 <body>
@@ -84,5 +96,165 @@
             <td colspan="4">N</td>
         </tr>
     </table>
+    <br>
+    <br>
+    <table>
+        <caption class="nomes">Tabela </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Mulheres</th>
+                    <td>Ana Maria</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Homens</th>
+                    <td>Bruno Mendes</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Mendonça</td>
+                    <td>Wall-e</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars 5</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+             
+                <br>
+                <br>
+                <table id="academica">
+                    <caption>Tabela Acadêmica</caption>
+                    <thead>
+                        <tr>
+                            <th class="gray" scope="col" rowspan="2">Área</th>
+                            <th class="gray" scope="col" rowspan="2">Disciplina</th>
+                            <th class="gray" scope="colgroup" colspan="2">Notas</th>
+                            <th class="gray" scope="col" rowspan="2">Média</th>
+                        </tr>
+                        <tr>
+                            <td>Nota 1</td>
+                            <td>Nota 2</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="4" scope="rowgroup">Exatas</th>
+                            <td>Matemática</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <td>Física</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <td>Química</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <td>Biologia</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray" scope="row" colspan="4">Média de Exatas</th>
+                            <td style="background-color: gray;color: #ffffff;">0.0</td>
+                        </tr>
+                        <tr>
+                            <th scope="rowgroup" rowspan="2">Humanas</th>
+                            <td>História</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <td>Geografia</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray" scope="row" colspan="4">Média de Humanas</th>
+                            <td style="background-color: gray;color: #ffffff;">0.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <table>
+                    <caption>Cadastro</caption>
+                    <!--Nomear colunas para destaque-->
+                    <colgroup>
+                    <col class="nome">
+                    <col class="sexo">
+                    <col class="idade">
+                    <col class="prof">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Sexo</th>
+                            <th>Idade</th>
+                            <th>Profissão</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pamela
+                           <td>F</td>
+                           <td>22</td>
+                           <td>Dentista</td>
+                        </tr>
+                        <tr>
+                            <td>Bruno</td>
+                            <td>M</td>
+                            <td>19</td>
+                            <td>Designer</td>
+                        </tr>
+                        <tr>
+                            <td>Fábio</td>
+                            <td>M</td>
+                            <td>45</td>
+                            <td>Professor</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+          
 </body>
 </html>
